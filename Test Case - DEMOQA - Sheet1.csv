@@ -1,0 +1,107 @@
+SL NO,   Test Scenario,Test Case,    Pre-Conditon,             Steps to Reproduce,               Expected Behavior,Actual Behavior,Result,Automated,Bug-ID,Senior Comment
+1,"Verify ""ToolsQA"" homepage button 
+is loaded. ",,Should be in the homepage,"1.Navigate to the header section of the page.
+2.Click on the “ToolsQA” link.","The link is clickable, and the page reloads or 
+refreshes to the homepage.",As expected,,,,
+2,Verify Join functionality,Verifying succesfull registration,Should be in the homepage,"1. Click on ""JOIN NOW"" button .
+2. Click on ""GO TO REGISTRATION"" button.
+3. Fill the registration form with valid data.
+4. Click on ""SEND"" button.","The system should display a confirmation message 
+stating: “We have received your message. We will 
+soon get in touch.”",As expected,Pass,Yes,-,Valid
+3,Verify Join functionality,"Verify 'JOIN NOW' button should redirect to
+ https://www.toolsqa.com/selenium-training/",,,,,,,,
+4,Verify Join functionality,"Verify 'GO TO REGISTRATION' button should 
+redirect to https://www.toolsqa.com/selenium-training/#enroll-form",,,,,,,,
+5,Verify Registration form,"Verify form submission with all 
+valid inputs","User is on the enrollment 
+form page","1.Enter valid First Name 2. Enter valid Last Name 
+3. Enter valid Email 4. Enter valid Mobile number 
+5. Select a Country from the dropdown 
+6. Enter valid City 7. Complete the captcha8. Click 
+the “Send” button","Form is submitted successfully, and a 
+confirmation message is displayed",As expected,Pass,,,Write Actual behavior
+6,Verify Registration form,"Verify when required fields are 
+left blank on enroll form page","User is on the enroll form 
+page",1.Leave all the fields empty 2. Click the “Send” button,"An pop message should display indicating please
+fill in thi field",As expected,Pass,,,Write Actual behavior
+7,Verify Registration form,"Verify character limit for First 
+Name and Last Name fields","User is on the enrollment 
+form page","1. Enter more characters than the allowed limit in 
+First Name and Last Name fields 
+(e.g., 256 characters) 2. Attempt to submit the form","An error message is displayed indicating the 
+character limit has been exceeded, or the input 
+is truncated to the maximum allowed length",As expected,Pass,,,Write Actual behavior
+8,Verify Registration form,"Verify form submission without
+completing captcha","User is on the https://www.
+toolsqa.com/selenium-training/ page","1. Enter valid First Name 2. Enter valid Last Name 
+3. Enter valid Emai l4. Enter valid Mobile number 
+5. Select a Country6. Enter valid City 7. Leave the 
+captcha incomplete 8. Click the “Send” button","An error message is displayed indicating that 
+captcha must be completed",As expected,Pass,,,
+9,Verify Registration form,"Verify the “Reset” button clears 
+all input fields in the registration 
+form","User should on the enrollment 
+form page",1. Enter data in all fields 2. Click the “Reset” button,All input fields are cleared,As expected,Pass,,,
+10,"Verify ""Elements"" button functionality","Verify the ""Elements"" button page loading",User should be the homepage,"1Navigate to ""Elements"" button 2.Click on ""Elements"" 
+button","User should be redirected to 
+https://demoqa.com/elements",As expected,Pass,,,
+11,"Verify ""Elements"" button ",Verify the dropdown functionality,"User should be on the 
+https://demoqa.com/elements","1.Navigate to ""Elements"" button 2.Click on ""Elements"" 
+button","The dropdown list should display upon clicking 
+the “Elements” button.",As expected,Pass,,,
+12,"Verify ""Elements"" button ","Verify that all options are displayed upon clicking 
+the dropdown.",Dropdown should be activated.,"1. Click on the “Elements” button to activate the dropdown
+2. Observe the list of options displayed.",All options should be visible in the dropdown list.,As expected,Pass,,,
+,"Verify ""Text Box"" button functionality","Verify the ""Text box"" button page loading","User should be on the 
+https://demoqa.com/elements","1.Navigate to the ""Text Box"" button. on the left side
+2.Click on the ""Text Box"" button",The text box page should open,As expected,Pass,,,
+14,"Verify ""Text Box"" button","Verify clicking on ""Text Box"" button should open a
+form page","User should be on the 
+https://demoqa.com/elements","1.Click on ""Elements"" button a dropdowndown should 
+appear 2.Click on ""Text box"" from that dropdown ",A Text box form page should open,As expected,Pass,,,
+15,"Verify ""Text Box"" button form page","Verify form submission with all 
+valid inputs","User should be on the 
+https://demoqa.com/text-box","1.Enter valid Full Name 2.Enter valid Email 3.Enter 
+valid current address 4. Enter valid parmanent address
+5.Click on ""Send"" button","A placeholder should appear with all the valid 
+detailes entered on the form",As expected,Pass,,,
+16,"Verify ""Text Box"" button form page","Verify form submission with all 
+invalid inputs","User should be on the 
+https://demoqa.com/text-box","1.Enter invalid Full Name 2.Enter invalid Email 3.Enter 
+invalid current address 4. Enter invalid parmanent address
+5.Click on ""Send"" button","A red placeholder should appear on the Email 
+section",As expected,Pass,,,
+17,"Verify ""Radio Button"" button functionality","Verify the ""Radio Button"" button page loading","User should be on the 
+https://demoqa.com/elements","1.Navigate to ""Radio Button"" button on the left side of page.
+2.Click on the ""Radio button"" button","The page should load successfully, and all radio 
+button elements should be visible.",,,,,
+18,"Verify ""Radio Button"" button",Verify “Yes” Radio Button Selection,"User should be on the
+https://demoqa.com/radio-button",1.Click on the “Yes” button.,"The “Yes” radio button should be selected 
+and You have selected Yes.""Yes"" should 
+appear green.",,,,,
+19,"Verify ""Radio Button"" button",Verify “Impressive” Radio Button Selection,"User should be on the
+https://demoqa.com/radio-button ",1.Click on the “Impressive” button.,"The “Impressive""radio button should be selected 
+and You have selected Yes.""Impressive"" should 
+appear green.",,,,,
+21,"Verify ""Radio Button"" button","Verify""No""button is not clickable","User should be on the
+https://demoqa.com/radio-button ",1.Click on the “No” button.,"The button is not clickable and does not 
+do anything",,,,,
+22,"Verify ""Buttons"" button functionality","Verify the ""Buttons"" button page loading","User should be on the 
+https://demoqa.com/elements","1.Navigate to ""Buttons"" button on the left side of page
+2.Click on ""Radio"" button.","The page should load successfully, and all buttons
+button elements should be visible.",,,,,
+23,"Verify ""Double Click Me"" button","Verify ""Double Click Me"" button works","User should be on 
+https://demoqa.com/buttons","1.Double click on the ""Double Click Me"" button","The page should give a response ""You have done
+a double click""",,,,,
+24,"Verify ""Right Click Me"" button","Verify ""Right Click Me"" button works","User should be on 
+https://demoqa.com/buttons","1.Right click on the ""Right Click Me"" button.","The page should give a response ""You have done
+a right click""",,,,,
+25,"Verify ""Click Me"" button","Verify ""Click Me"" button works","User should be on 
+https://demoqa.com/buttons","1. Click on the ""Click Me"" button","The page should give a response ""You have done
+ a dynamic click""",,,,,
+26,,,,,,,,,,
+27,,,,,,,,,,
+28,,,,,,,,,,
+29,,,,,,,,,,
+30,,,,,,,,,,
